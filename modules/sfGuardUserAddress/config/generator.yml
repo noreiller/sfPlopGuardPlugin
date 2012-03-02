@@ -1,0 +1,27 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           sfGuardUserAddress
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              sfGuardUserAddress
+    plural:                sfGuardUserAddresss
+    route_prefix:          sf_plop_guard_user_address
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        sfGuardUser: { label: "User" }
+      list:
+        title: 'List of the addresses'
+        display: [sfGuardUser, address_name, address, address2, state, zip_code, country, created_at, updated_at]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: 'Edit the address "%%address_name%%"'
+      new:
+        title: 'Create a new address'

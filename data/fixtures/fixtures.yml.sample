@@ -1,0 +1,34 @@
+# sfGuardProfilePlugin
+sfGuardGroup:
+  users:
+    name: users
+    description: Users
+
+sfGuardUserProfile:
+  admin:
+    user_id:        admin
+    first_name:     Anon
+    last_name:      YMOUS
+    culture:        fr
+    email:          anon@ymo.us
+
+sfGuardPermission:
+  sfGuardUser:
+    name: sfGuardUser
+    description: Users
+  sfGuardGroup:
+    name: sfGuardGroup
+    description: Groups
+
+sfGuardGroupPermission:
+  admin_sfGuardUser:
+    group_id: admin
+    permission_id: sfGuardUser
+  admin_sfGuardGroup:
+    group_id: admin
+    permission_id: sfGuardGroup
+
+sfGuardUserGroup:
+  users_admin:
+    group_id:       users
+    user_id:        admin

@@ -1,0 +1,20 @@
+sf_plop_guard_user_profile:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                sfGuardUserProfile
+    module:               sfGuardUserProfile
+    prefix_path:          /plop-guard/:sf_culture/profile
+    column:               id
+
+sf_plop_guard_user_address:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                sfGuardUserAddress
+    module:               sfGuardUserAddress
+    prefix_path:          /plop/:sf_culture/address
+    column:               id
+    with_wildcard_routes: true
+
+sf_plop_profile:
+  url: /plop/:sf_culture/profile
+  param: { module: sfPlopGuardProfile, action: profile }

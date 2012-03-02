@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="fr_FR" datatype="plaintext" date="2011-03-04T11:53:19Z">
+    <body>
+      <trans-unit>
+        <source>Home</source>
+        <target>Maison</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Groups</source>
+        <target>Groupes</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Users</source>
+        <target>Utilisateurs</target>
+      </trans-unit>
+      <trans-unit>
+        <source>User profiles</source>
+        <target>Profils utilisateur</target>
+      </trans-unit>
+      <trans-unit>
+        <source>address</source>
+        <target>adresse</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Address</source>
+        <target>Adresse</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Address name</source>
+        <target>Nom de l'adresse</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Address line 2</source>
+        <target>Adresse ligne 2</target>
+      </trans-unit>
+      <trans-unit>
+        <source>State</source>
+        <target>État</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Zip code</source>
+        <target>Code postal</target>
+      </trans-unit>
+      <trans-unit>
+        <source>City</source>
+        <target>Ville</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Country</source>
+        <target>Pays</target>
+      </trans-unit>
+      <trans-unit>
+        <source>My addresses</source>
+        <target>Mes adresses</target>
+      </trans-unit>
+      <trans-unit>
+        <source>List of the addresses</source>
+        <target>Liste des adresses</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit the address "%%address_name%%"</source>
+        <target>Edition de l'adresse "%%address_name%%"</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Create a new address</source>
+        <target>Créer une nouvelle adresse</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

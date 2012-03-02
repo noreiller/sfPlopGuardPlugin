@@ -1,0 +1,25 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           sfGuardUserProfile
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              sfGuardUserProfile
+    plural:                sfGuardUserProfiles
+    route_prefix:          sf_guard_user_profile
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: 'List of the user profiles'
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: 'Editing the profile of "%%firstname%% %%lastname%%"'
+      new:
+        title: 'Creating a new profile'

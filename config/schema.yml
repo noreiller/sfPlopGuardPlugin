@@ -1,0 +1,33 @@
+propel:
+  _attributes:    { package: plugins.sfPlopGuardPlugin.lib.model }
+
+  sf_guard_user_profile:
+    _attributes:  { phpName: sfGuardUserProfile }
+    id:
+    user_id:      { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    first_name:   { type: varchar, size: 255 }
+    last_name:    { type: varchar, size: 255 }
+    role:         { type: varchar, size: 255 }
+    email:        { type: varchar, size: 255 }
+    phone:        { type: varchar, size: 255 }
+    is_public:    { type: boolean, required: true, default: 0 }
+    theme:        { type: varchar, size: 255 }
+    culture:      { isCulture: true, type: varchar, size: 7 }
+    created_at:   { type: timestamp }
+    updated_at:   { type: timestamp }
+    
+  sf_guard_user_address:
+    _attributes:  { phpName: sfGuardUserAddress }
+    id:
+    user_id:      { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    address_name: { type: varchar, size: 255 }
+    address:      { type: varchar, size: 255 }
+    address2:     { type: varchar, size: 255 }
+    state:        { type: varchar, size: 255 }
+    zip_code:     { type: varchar, size: 255 }
+    city:         { type: varchar, size: 255 }
+    country:      { type: varchar, size: 255 }
+    created_at:   { type: timestamp }
+    updated_at:   { type: timestamp }
+    
+    
